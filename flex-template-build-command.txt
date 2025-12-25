@@ -1,0 +1,11 @@
+-- To build codebase image
+gcloud builds submit --tag gcr.io/acoustic-fusion-480217-b1/cab-idle:latest .
+
+-- To build Flex Template
+gcloud dataflow flex-template build \
+  gs://dataflow-templates-gds-1/templates/cab-idle.json \
+  --image=gcr.io/acoustic-fusion-480217-b1/cab-idle:latest \
+  --sdk-language=PYTHON \
+  --metadata-file=metadata.json
+
+  
