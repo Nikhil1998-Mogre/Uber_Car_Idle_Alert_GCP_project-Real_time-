@@ -16,3 +16,4 @@ ENV FLEX_TEMPLATE_PYTHON_PY_FILE="/templates/halt_detection_beam_job.py"
 
 # 4) Tell Dataflow to use your image as the SDK container
 ENV FLEX_TEMPLATE_PYTHON_CONTAINER_IMAGE="gcr.io/acoustic-fusion-480217-b1/cab-idle:latest"
+
