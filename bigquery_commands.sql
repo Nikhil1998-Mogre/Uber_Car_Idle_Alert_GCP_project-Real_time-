@@ -12,3 +12,4 @@ CREATE TABLE IF NOT EXISTS fleet_analytics.cab_idle_events (
   window_end   TIMESTAMP,
   distance_m   FLOAT64
 ) PARTITION BY DATE(window_start);
+
